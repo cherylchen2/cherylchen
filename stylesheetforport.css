@@ -26,7 +26,7 @@ h3.tabTitle {
 
 h3.jobTitle {
     color: white;
-    font-size: 80px;
+    font-size: 22vh;
 }
 
 p.mainText {
@@ -47,7 +47,7 @@ img.workg {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    width: 600px;
+    width: 10%;
 }
 
 .tab {
