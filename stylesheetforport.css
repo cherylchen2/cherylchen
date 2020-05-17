@@ -26,12 +26,12 @@ h3.tabTitle {
 
 h3.jobTitle {
     color: white;
-    font-size: 22vh;
+    font-size: 2em;
 }
 
 p.mainText {
     font-family: 'Lucida Sans Typewriter';
-    font-size: 22vh;
+    font-size: 1.2em;
     color: white;
     width: 90%;
 }
