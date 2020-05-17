@@ -11,7 +11,7 @@ body {
 
 h1.intro {
     font-family: 'Anonymous Pro', monospace;
-    font-size: 10vw;
+    font-size: 5vw;
     color: white;
     animation: typewriter 3s steps(15) 1s 1 normal both, blinkTextCursor 1s steps(40) infinite normal;
     overflow: hidden;
