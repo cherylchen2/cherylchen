@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="stylesheetforport.css" />
+    <title></title>
+</head>
+<body>
+    <div class="titles">
+        <div min-width="200vh">
+            <h1 class="intro">Hi, I'm Cheryl.</h1>
+        </div>
+        <div>
+            <p class="mainText">
+                <br />I am a second year Computer Sciene student at University of Toronto Scarborough, currently enrolled in the Software Engineering stream.
+                <br /> <br /> I have started computer sciences classes since IGCSE which was in grade 9. But my interest for computers started way back when I was as young as grade 2.
+                As my father is also a computer scientist, I own my own computer science grade 2. At the same time, I started to gain interest with photography in grade 6, thus when
+                ICT classes in grade 7 started, teaching us photoshop and other designing tools, I gained even more interest in design, game design and software development.
+                Not only I want to be able to create something that is aesthetic to the eyes, but I have always wondered how common problems seen in life can be solved with the help
+                of computers - What kind of solution can I create using my creativity and the knowledge I have about technology?
+            </p>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+        </div>
+        <div id="Experience" class="tabcontent">
+            <h3 class="tabTitle">Experience</h3>
+            <h3 class="jobTitle">Shanghai Winner Information Technology Co. Inc. \ HR Intern</h3>
+            <ul>
+                <li>Set up mobile recruitment websites with easy and friendly interfaces for recruitment of University students</li>
+                <li>Graphic designer for WeChat official account, mobile website, posters and brochures to increase the attraction of the booth in a Job fair</li>
+            </ul>
+        </div>
+        <div id="Projects" class="tabcontent">
+            <h3 class="tabTitle">Projects</h3>
+        </div>
+
+    </div>
+
+    
+    <script>
+        function openTab(evt, event) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(event).style.display = "block";
+            evt.currentTarget.className += "active";
+        }
+    </script>
+
+    <img class="workg" src="file:///E:/Studies/COOP/OWebsite%20Port/work-pp.gif" alt="error" />
+</body>
+</html>
