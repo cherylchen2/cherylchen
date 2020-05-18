@@ -10,7 +10,7 @@ body {
 
 h1.intro {
     font-family: 'Anonymous Pro', monospace;
-    font-size: 5vw;
+    font-size: 7vw;
     color: white;
     animation: typewriter 3s steps(15) 1s 1 normal both, blinkTextCursor 1s steps(40) infinite normal;
     overflow: hidden;
@@ -26,13 +26,12 @@ h3.tabTitle {
 
 h3.jobTitle {
     color: white;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 p.mainText {
     font-family: 'Lucida Sans Typewriter';
     font-size: 1.2em;
-    color: white;
     width: 90%;
 }
 
@@ -44,9 +43,9 @@ div.titles {
 }
 
 img.workg {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
     width: 10%;
 }
 
@@ -62,10 +61,10 @@ img.workg {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 40px 100px;
+    padding: 1em 3em;
     transition: 0.3s;
     color: white;
-    font-size: 50px;
+    font-size: 1.2em;
 }
 
 .tab button.active {
@@ -83,7 +82,7 @@ img.workg {
     border: 0px;
     border-top: none;
     color: white;
-    font-size: 50px;
+    font-size: 1.2em;
 }
 
 .line {
@@ -92,7 +91,7 @@ img.workg {
     width: 16em;
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    font-size: 180%;
+    font-size: 1.2em;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
