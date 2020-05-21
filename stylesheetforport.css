@@ -20,16 +20,17 @@ h1.intro {
 }
 
 h3.tabTitle {
-    font-family: inherit;
+    font-family: Candara;
     color: white;
 }
 
 h3.jobTitle {
     color: white;
-    font-size: 1em;
+    font-size: 100%;
+    font-family: Candara;
 }
 
-p.mainText {
+.mainText {
     font-family: Candara;
     font-size: 1.2em;
     width: 90%;
@@ -64,13 +65,19 @@ img.workg {
     padding: 1em 3em;
     transition: 0.3s;
     color: white;
-    font-size: 1.2em;
+    font-size: 2vh;
+    font-family: Candara;
 }
 
-.tab button.active {
-    background-color: orange;
-    color: orange;
+.tab button:active {
+    background-color: lightpink;
+    color: darkslategray;
 }
+
+    .tab button:visited {
+        background-color: lightpink;
+        color: darkslategray;
+    }
 
 .tab button:hover {
     background-color: dodgerblue;
@@ -83,6 +90,12 @@ img.workg {
     border-top: none;
     color: white;
     font-size: 1.2em;
+    max-width: 90%;
+}
+
+.content {
+    font-family: Candara;
+    font-size: 1em;
 }
 
 .line {
@@ -126,7 +139,6 @@ img.workg {
     from {
         border-right-color: white;
     }
-
     to {
         border-right-color: transparent;
     }
