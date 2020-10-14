@@ -30,6 +30,12 @@ h3.jobTitle {
     font-family: Candara;
 }
 
+h4.jobPeriod {
+    color: LightGoldenRodYellow;
+    font-size: 90%;
+    font-family: Candara;
+}
+
 .mainText {
     font-family: Candara;
     font-size: 1.2em;
