@@ -12,7 +12,7 @@
         }
         
         #backgroundWorkingVideo {
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
             object-fit: fill;
@@ -33,17 +33,49 @@
             max-width: none;
             background-color:none;
             height: 100vh;
+            scroll-snap-align: center;
         }
         
         </style>
 </head>
-    <section>
-        <div class="content">
-            <h1 class="intro">Hi, I'm Cheryl.</h1>
+<div class="scroll-container">
+    <section id="CoverPage">
+        <div class="content" style="position: relative;">
+            <div class="introWrapper">
+                <h1 class="intro">Hi, I'm Cheryl.</h1> 
+            </div>
+                
+            <video autoplay muted loop id="backgroundWorkingVideo">
+                <source src="work-cropped.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
         </div>
-        <video autoplay muted loop id="backgroundWorkingVideo">
-            <source src="work-cropped.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
+
     </section>
+    
+    <section id="AboutMePage">
+        <div class="content">
+            <h2 class="pageTitles">About me.</h2>
+            <p class="mainText" style="text-align: center;">A third year Computer Science student in University of Toronto.</p>
+            <button class="button">Learn more</button>
+        </div>
+    </section>
+
+    <section id="ExperiencePage">
+        <div class="content">
+            <h2>Experiences.</h2>
+        </div>
+    </section>
+
+    <section id="ProjectPage">
+        <div class="content">
+            <h2>Projects.</h2>
+        </div>
+    </section>
+</div>
+    
+
+<script>
+
+</script>
 
