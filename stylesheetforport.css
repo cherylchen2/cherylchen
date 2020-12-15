@@ -1,11 +1,8 @@
 ﻿/* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-body {
-    background-color: skyblue;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body{
+    margin: 0;
 }
 
 h1.intro {
@@ -15,7 +12,8 @@ h1.intro {
     animation: typewriter 3s steps(15) 1s 1 normal both, blinkTextCursor 1s steps(40) infinite normal;
     overflow: hidden;
     white-space: nowrap;
-    border-right:16px solid white;
+    margin: auto;
+    display: block;
     width:15ch;
 }
 
