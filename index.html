@@ -5,38 +5,6 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="stylesheetforport.css" />
     <title>Cheryl's page</title>
-    <style>
-        html {
-          scroll-behavior: smooth;
-          box-sizing: border-box;
-        }
-        
-        #backgroundWorkingVideo {
-            position: relative;
-            top: 0;
-            left: 0;
-            object-fit: fill;
-            height: 100vh;
-            width: 100%;
-            z-index: -100;
-        }
-
-        .content {
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-        section {
-            width: 100%;
-            display: table;
-            margin: 0;
-            max-width: none;
-            background-color:none;
-            height: 100vh;
-            scroll-snap-align: center;
-        }
-        
-        </style>
 </head>
 <div class="scroll-container">
     <section id="CoverPage">
@@ -53,23 +21,70 @@
 
     </section>
     
-    <section id="AboutMePage">
+    <section id="AboutMePage" style="background-color: #c6ffed;">
         <div class="content">
             <h2 class="pageTitles">About me.</h2>
             <p class="mainText" style="text-align: center;">A third year Computer Science student in University of Toronto.</p>
-            <button class="button">Learn more</button>
+            <button class="button" onclick="document.location='aboutMe.html'">Learn more</button>
         </div>
     </section>
 
-    <section id="ExperiencePage">
+    <section id="ExperiencePage" style="background-color: rgb(255, 196, 196);">
         <div class="content">
-            <h2>Experiences.</h2>
-        </div>
+            <h2 style="margin: 4%;">Experiences.</h2>
+            <div id="Experience" style="margin: 3%;">
+                <h3 class="jobTitle">Verystar linked by Isobar \ Quality Assurance Intern</h3>
+                <h4 class="jobPeriod">2020 October - 2020 December</h4>
+                <ul>
+                    <li>Learn the company's coupon system and ensure the information correctness of coupons from different brands</li>
+                    <li>Debug and maintain product quality by finding any possible errors and inefficiency compiled into a report for further discussions with the development team. Follow up with further solutions in the future.</li>
+                </ul>
+                <h3 class="jobTitle">Shanghai Winner Information Technology Co. Inc. \ HR Intern</h3>
+                <h4 class="jobPeriod">2017 July - 2017 August</h4>
+                <ul>
+                    <li>Set up mobile recruitment websites with easy and friendly interfaces for recruitment of University students</li>
+                    <li>Graphic designer for WeChat official account, mobile website, posters and brochures to increase the attraction of the booth in a Job fair</li>
+                </ul>
+                <h3 class="jobTitle">Obizsoft Software Shanghai, China \ Software Engineer Intern</h3>
+                <h4 class="jobPeriod">2017 August - 2017 September</h4>
+                <ul>
+                    <li>Conducted final testing of functionalities for the companies’ final products</li>
+                    <li>Research on company’s customer preferences for a to-be developed software that will be used on tourist cruises or entertainment and safety purposes</li>
+                    <li>Presentation of final research with clear communication and organization skills</li>
+                </ul>
+            </div>
+        </div>  
     </section>
 
-    <section id="ProjectPage">
+    <section id="ProjectPage" style="background-color: rgb(255, 203, 183);">
         <div class="content">
-            <h2>Projects.</h2>
+            <div id="Projects" style="margin: 3%;">
+                <h3 class="tabTitle">Projects</h3>
+                <h3 class="jobTitle">Shopping Cart Android App</h3>
+                <p>Contributing members: Terry Lay, Yue Han, Batuhan Dover, Vladislav Trukhin, Cheryl Chen</p>
+                <ul class="content">
+                    <li>Use of Object-Oriented Programming and Design patterns to build an organized and efficient application</li>
+                    <li>Increased the team’s efficiency by excellent communication and management</li>
+                    <li>Critical thinking skills used to create more efficient solutions to the problem that enhance user experience for the application</li>
+                    <li><a href="https://github.com/cherylchen2/Shopping-Cart-App">View on github</a></li>
+                </ul>
+                <h3 class="jobTitle">Student Portfolio Generator</h3>
+                <p>Generates fillable student portfolios from data in Microsoft Excel</p>
+                <ul>
+                    <li>Developed solution to increase schoolteacher’s efficiency by designing a software that generate individual student portfolio with given data in an Excel file</li>
+                    <li>Increased efficiency and organization of development by use of system development cycle</li>
+                    <li>Employment of Object-Oriented Programming to achieve high efficiency and organization</li>
+                    <li><a href="https://github.com/cherylchen2/StudentProfileGenerator">View on github</a></li>
+                </ul>
+                <h3 class="jobTitle">Mini-game on Python</h3>
+                <p>Local multiplayer game where players aim to catch more pokeballs than another player</p>
+                <ul>
+                    <li>Employed score, movement and player collision system with the use of Python 3.6 and Pygame</li>
+                    <li>Implementation of random functions to keep game interesting for players</li>
+                    <li>Use of windowed GUI, sounds effects, animation and graphic design to create a user friendly and exciting game environment for user to enjoy</li>
+                    <li><a href="https://github.com/cherylchen2/PokeballCatchingGame">View on github</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 </div>

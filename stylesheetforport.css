@@ -5,6 +5,35 @@ body{
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  
+  #backgroundWorkingVideo {
+      position: relative;
+      top: 0;
+      left: 0;
+      object-fit: fill;
+      height: 100vh;
+      width: 100%;
+      z-index: -100;
+  }
+
+  .content {
+      display: table-cell;
+      vertical-align: middle;
+  }
+
+  section {
+      width: 100%;
+      display: table;
+      margin: 0;
+      max-width: none;
+      height: 100vh;
+      scroll-snap-align: center;
+  }
+
 .introWrapper {
     width: 100%; 
     height: 100%;
@@ -39,17 +68,17 @@ h2.pageTitles {
 
 h3.tabTitle {
     font-family: Candara;
-    color: white;
+    color: black;
 }
 
 h3.jobTitle {
-    color: white;
+    color: black;
     font-size: 100%;
     font-family: Candara;
 }
 
 h4.jobPeriod {
-    color: LightGoldenRodYellow;
+    color: grey;
     font-size: 90%;
     font-family: Candara;
 }
@@ -79,7 +108,7 @@ img.workg {
     margin: auto;
     align-items: center;
     display: block;
-   background-color: none;
+   background-color: inherit;
    border-radius: 12px;
    padding: 16px 32px;
    color: black;
