@@ -22,12 +22,16 @@
     </section>
 
     <section id="AboutMePage">
-        <body onload="init()">
-            <canvas id="aboutGame">
-                Browser does not support canvas.
-            </canvas>
-            <script src="aboutGame.js"></script>
-        </body>
+        <body position="absolute">
+                <canvas id="background" z-index="0">
+                    Browser does not support canvas.
+                </canvas>
+                <canvas id="character" z-index="1">
+
+                </canvas>
+                <script src="aboutGame.js"></script>
+        </div>
+    </body>
     </section>
 
     <section id="ExperiencePage" style="background-color: rgb(255, 196, 196);">
