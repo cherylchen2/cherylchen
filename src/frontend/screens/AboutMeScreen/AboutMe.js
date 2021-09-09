@@ -4,7 +4,6 @@ import { Entity, Scene } from 'aframe-react';
 import 'aframe';
 import '../../../styles.css'
 import sky from '../../../resources/assets/sky.jpg'
-import model from "./scene.glb"
 
 class AboutMe extends React.Component {
     
@@ -38,7 +37,6 @@ class AboutMe extends React.Component {
                     width: this.props.containerWidth,
                 }}>
                     <Entity geometry={{primitive: 'box', width: 5}} position="0 0 -5"/>
-                    <Entity gltf-model={{src: './scene.gltf'}}/>
                 </a-scene>
                 
             </div>
