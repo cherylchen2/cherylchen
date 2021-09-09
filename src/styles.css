@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500;700&display=swap');
+
+.video-background{
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.video-title{
+    font-family: 'Courier New', monospace;
+    color: #2e2e2e;
+}
+
+.video-portrait{
+    overflow: hidden;
+    display: block;
+    align-content: flex-end;
+}
+
+.video-landscape {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.long {
+    object-position: 0% 100%;
+}
+
+.tall {
+    object-position: 100% 0%;
+}
+
+.education-logo {
+    border-radius: 50%;
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+
+.fonts {
+  font-family: 'Work Sans', sans-serif;  
+}
+
+.title{
+    margin: 0px;
+    margin-left: 3%;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.normal{
+    margin: 0px;
+    margin-left: 3%;
+    font-style: normal;
+    font-weight: 300;
+}
+
+a-scene {
+    height: 300px;
+    width: 600px;
+}
