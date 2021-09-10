@@ -4,6 +4,7 @@ import '../../../styles.css'
 import Dimensions from 'react-dimensions'
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter'
+import BounceArrow from '../../component/BounceArrow'
 
 class WelcomeScreen extends React.Component {
     render() {
@@ -70,6 +71,14 @@ const BackgroundVideo = ({ height, width }) => {
     return(
         <div>
             <div>
+                <div
+                    style={{
+                        position: 'absolute',
+                        bottom: 0,
+                        right: width/2,
+                        zIndex: 1
+                    }}
+                    ><BounceArrow/></div>
                 <MediaQuery query='(orientation: portrait)'>
                     <div>
                         <IntroTitle height={height} width={width} fontSize={height/18}/>
@@ -89,6 +98,7 @@ const BackgroundVideo = ({ height, width }) => {
                                     <source src={bgVid} type="video/mp4"/>
                                     Your browser does not support HTML5 video.
                                 </video>
+                                
                             </div>
                             :
                             <div id="videoPortrait" class="video-portrait">

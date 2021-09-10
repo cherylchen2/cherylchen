@@ -36,8 +36,8 @@ function App() {
             <Switch onChange={handleDarkMode}/> 
         </div>
         <div className="App">
-        <WelcomeScreen/>
-      </div>
+          <WelcomeScreen/>
+        </div>
       <div className="App">
         <EducationPage darkMode={darkMode}/>
       </div>
