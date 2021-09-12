@@ -232,7 +232,7 @@ class EducationPage extends React.Component {
                         alignItems: 'stretch',
                         marginTop: '2%',
                     }}>
-                        <Normal width={this.props.containerWidth} darkMode={this.props.darkMode}>To take courses:</Normal>
+                        <Normal width={this.props.containerWidth} darkMode={this.props.darkMode}>Courses to take:</Normal>
                         <div style={{
                             width: this.props.containerWidth * 0.5
                         }}>
