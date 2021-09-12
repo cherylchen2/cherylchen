@@ -41,6 +41,9 @@ function App() {
       <div className="App">
         <EducationPage darkMode={darkMode}/>
       </div>
+      <div className="App">
+        <AboutMe/>
+      </div>
     </div>
 
     

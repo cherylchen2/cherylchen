@@ -32,11 +32,19 @@ class AboutMe extends React.Component {
             <div
                     containerWidth={this.props.containerWidth}
                     containerHeight={this.props.containerHeight}>
-                <a-scene embedded style={{
-                    height: this.props.containerHeight,
-                    width: this.props.containerWidth,
-                }}>
-                    <Entity geometry={{primitive: 'box', width: 5}} position="0 0 -5"/>
+                <a-scene
+                    embedded style={{
+                        height: this.props.containerHeight,
+                        width: this.props.containerWidth,
+                    }}
+                    light="defaultLightsEnabled: false">
+                        <a-entity light="type: ambient; color: #3b3b3b"></a-entity>
+                    <a-gltf-model
+                        src="https://cdn.glitch.com/bbbda2ec-7aa5-4442-94df-c042086de86f%2Froom_kb1.glb?v=1631461270044"
+                        scale="1 1 1"
+                        position="0 -1 0"
+                        gltf-model="https://cdn.glitch.com/bbbda2ec-7aa5-4442-94df-c042086de86f%2Froom_kb1.glb?v=1631461270044"
+                    ></a-gltf-model>
                 </a-scene>
                 
             </div>
