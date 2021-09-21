@@ -4,9 +4,10 @@ import '../../styles.css'
 
 const TitleTypography = (props) => {
     const theme = PaletteSet.getSheet(props.darkMode)
+    const { scale = 1 } = props
     return(
         <h1 class="normal fonts" style={{
-            fontSize: props.width/70 * (props.scale ? props.scale : 1),
+            fontSize: (props.width/70) * scale,
             color: props.darkMode ? theme.palette.greyText.dark : theme.palette.greyText.main,
             fontWeight: props.weight
         }}>

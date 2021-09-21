@@ -5,6 +5,7 @@ import AboutMe from './frontend/screens/AboutMeScreen/AboutMe'
 import EducationPage from './frontend/screens/Education/EducationPage'
 import useScrollSnap from 'react-use-scroll-snap'
 import Switch from './frontend/component/SwitchToggle'
+import Projects from './frontend/screens/Projects/Projects'
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
         </div>
       <div className="App">
         <EducationPage darkMode={darkMode}/>
+      </div>
+      <div className="App">
+        <Projects darkMode={darkMode}/>
       </div>
       <div className="App">
         <AboutMe/>
