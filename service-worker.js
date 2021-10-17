@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cherylchen/precache-manifest.424f5281d55c863b2e7f79960e081301.js"
+  "/cherylchen/precache-manifest.466d0b6a776b59bc9afd904444f07d81.js"
 );
 
 workbox.clientsClaim();
