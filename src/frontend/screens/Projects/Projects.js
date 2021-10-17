@@ -90,7 +90,7 @@ const Item = (props) => {
                     </Normal>
                     <div style={{ margin: 12, padding: 5 }}>
                         {props.item.link.length > 0 ? 
-                        <Button text="More!" darkMode={props.darkMode} link={props.item.link}/> : null
+                            <Button text="More!" darkMode={props.darkMode} link={props.item.link}/> : null
                         }
                     </div> 
                     
