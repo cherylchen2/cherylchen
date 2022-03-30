@@ -19,18 +19,7 @@ import ButtonMenu from '../../component/ButtonMenu'
 import Lists from '../../component/Lists'
 
 const currentList = [
-    {
-        name: 'CSCC37/Numerical Algorithms',
-        url: 'https://utsc.calendar.utoronto.ca/course/cscc37h3'
-    },
-    {
-        name: 'CSCC43/Introduction to Databases',
-        url: 'https://utsc.calendar.utoronto.ca/course/cscc43h3'
-    },
-    {
-        name: 'CSCC73/Algorithm Design and Analysis',
-        url: 'https://utsc.calendar.utoronto.ca/course/cscc73h3'
-    }
+
 ]
 
 const finishedList = [
@@ -94,6 +83,18 @@ const finishedList = [
         name: 'CSCC01/Software Eng. Intro',
         url:''
     },
+    {
+        name: 'CSCC37/Numerical Algorithms',
+        url: 'https://utsc.calendar.utoronto.ca/course/cscc37h3'
+    },
+    {
+        name: 'CSCC43/Introduction to Databases',
+        url: 'https://utsc.calendar.utoronto.ca/course/cscc43h3'
+    },
+    {
+        name: 'CSCC73/Algorithm Design and Analysis',
+        url: 'https://utsc.calendar.utoronto.ca/course/cscc73h3'
+    }
 ]
 
 const planList = [
