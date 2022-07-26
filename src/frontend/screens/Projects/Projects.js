@@ -3,6 +3,8 @@ import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@material-ui/core'
 
 import Dimensions from 'react-dimensions';
+import MediaQuery from 'react-responsive';
+import Chip from '@material-ui/core/Chip';
 import ontrack from '../../../resources/ontrack.png'
 import habipets from '../../../resources/habipets.png'
 import aic from '../../../resources/aic.png'
@@ -24,9 +26,9 @@ const projects = [
         link: "https://devpost.com/software/ontrack-nq0iv2"
     },
     {
-        name: "HabiPets",
+        name: "PetSprout",
         background: habipets,
-        technologies: ["React.js", "JavaScript", "HTML/CSS", "MongoDB", "Express", "Agile", "Visual Studio Code"],
+        technologies: ["React.js", "JavaScript", "Expo", "Docker", "Node.js", "HTML/CSS", "MongoDB", "Express", "Agile", "Visual Studio Code"],
         description: "We want to cater this application to students who may be suffering from the effects of the pandemic on motivation levels. " +
         "Techniques such as self-regulated learning, pomodoro, flowtime technique implemented into the features to encourage users to develop better" +
         " study habits. Gamification is also used to motivate users to stick with their goals.",
@@ -77,14 +79,28 @@ const Item = (props) => {
             width: props.width,
             justifyContent: 'center'
         }}>
+            <MediaQuery query='(orientation: portrait)'>
             <div style={{
-                display: 'flex',
                 justifyContent: 'center',
-                padding: props.width*0.05
+                padding: props.width*0.05,
+                height: props.height
             }}>
-                
-                <div>
+                <div style={{ flex: 0.6 }}>
                     <Title width={props.width} darkMode={props.darkMode}>{props.item.name}</Title>
+                    <div style={{ marginLeft: '2%'}}>
+                        {props.item.technologies.map(tech => 
+                            <Chip style={{
+                                marginLeft: '1%',
+                                marginBottom: '1%',
+                                height: `${(props.width/1150) + (props.width/1150)*0.2}em`,
+                                fontSize: `${props.width/1150}em`,
+                                backgroundColor: '#85b7d4',
+                                color: 'white'
+                            }}
+                            label={tech}/>)
+                        }
+                    </div>
+                   
                     <Normal width={props.width} darkMode={props.darkMode}>
                         {props.item.description}
                     </Normal>
@@ -95,13 +111,53 @@ const Item = (props) => {
                     </div> 
                     
                 </div> 
-                <div>
+                <div style={{ flex: 0.4 }}>
+                    <img style={{
+                        width: '100%',
+                        padding: props.width*0.03
+                    }} src={props.item.background}/>
+                </div>
+            </div>
+            </MediaQuery>
+            <MediaQuery query='(orientation: landscape)'>
+                <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                padding: props.width*0.05
+            }}>
+                
+                <div style={{ flex: 0.6 }}>
+                    <Title width={props.width} darkMode={props.darkMode}>{props.item.name}</Title>
+                    {props.item.technologies.map(tech => 
+                        <Chip style={{
+                            marginLeft: '1%',
+                            marginBottom: '1%',
+                            height: `${props.width/1000}em`,
+                            fontSize: `${props.width/1150}em`,
+                            backgroundColor: '#85b7d4',
+                            color: 'white'
+                        }}
+                        label={tech}/>)
+                    }
+                    <Normal width={props.width} darkMode={props.darkMode}>
+                        {props.item.description}
+                    </Normal>
+                    <div style={{ margin: 12, padding: 5 }}>
+                        {props.item.link.length > 0 ? 
+                            <Button text="More!" darkMode={props.darkMode} link={props.item.link}/> : null
+                        }
+                    </div> 
+                    
+                </div> 
+                <div style={{ flex: 0.4 }}>
                     <img style={{
                         maxWidth: props.width*0.6,
                         padding: props.width*0.03
                     }} src={props.item.background}/>
                 </div>
             </div>
+            </MediaQuery>
+            
         </Paper>
     )
 }
